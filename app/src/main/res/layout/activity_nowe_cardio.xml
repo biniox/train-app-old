@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".NowyTrening">
+
+
+    <Button
+
+        android:id="@+id/dodajCardioButton"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:width="130dip"
+        android:height="100dip"
+        android:maxWidth="200dip"
+        android:minWidth="20dip"
+        android:text="Zapisz"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <EditText
+
+        android:id="@+id/NameCardioEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="382dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="436dp"
+        android:ems="10"
+        android:hint="Nazwa"
+        android:inputType="textLongMessage"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272626"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:paddingTop="0dip"
+        android:paddingEnd="30dip"
+        android:paddingRight="30dip"
+        android:paddingBottom="0dip"
+        android:text="Nowy Cardio"
+        android:textColor="#FDF8F8"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+
+        android:id="@+id/view2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.57"
+        tools:layout_editor_absoluteX="2dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".DodajPomiar">
+
+
+    <Button
+        android:id="@+id/DodajButton"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="217dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="180dp"
+        android:layout_weight="1"
+        android:width="130dip"
+        android:height="100dip"
+        android:maxWidth="200dip"
+        android:minWidth="20dip"
+        android:text="Dodaj Pomiar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/wagaEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="185dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="268dp"
+        android:ems="10"
+        android:hint="Waga cm"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/DataEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="382dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="420dp"
+        android:ems="10"
+        android:hint="Data"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/bicepsEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="185dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="268dp"
+        android:ems="10"
+        android:hint="Biceps cm"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/brzuchEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="95dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="352dp"
+        android:ems="10"
+        android:hint="Brzuch cm"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/klatkaEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="95dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="352dp"
+        android:ems="10"
+        android:hint="Klatka cm"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/udaEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="95dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="352dp"
+        android:ems="10"
+        android:hint="Uda cm"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272626"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:paddingTop="0dip"
+        android:paddingEnd="30dip"
+        android:paddingRight="30dip"
+        android:paddingBottom="0dip"
+        android:text="Dodaj nowy Pomiar"
+        android:textColor="#FDF8F8"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272626"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:paddingTop="30dip"
+        android:paddingEnd="30dip"
+        android:paddingRight="30dip"
+        android:paddingBottom="30dip"
+        android:text="Witaj Ponownie @name"
+        android:textColor="#FDF8F8"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272626"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pomiaryButton"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="130dip"
+            android:height="100dip"
+            android:maxWidth="200dip"
+            android:minWidth="20dip"
+            android:text="Pomiary Ciała"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/maksyButton"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="130dip"
+            android:height="100dip"
+            android:text="Twoje maksy Treningowe"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/cardioButton"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="130dip"
+            android:height="100dip"
+            android:maxWidth="200dip"
+            android:minWidth="20dip"
+            android:text="Twoje Cardio"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272626"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:paddingTop="30dip"
+        android:paddingEnd="30dip"
+        android:paddingRight="30dip"
+        android:paddingBottom="30dip"
+        android:text="Co dziś trenujemy?"
+        android:textColor="#FDF8F8"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

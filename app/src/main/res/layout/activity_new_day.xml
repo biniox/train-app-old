@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".NewDay">
+
+
+    <Button
+
+        android:id="@+id/saveButton"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="52dp"
+        android:layout_weight="1"
+        android:width="130dip"
+        android:height="100dip"
+        android:maxWidth="200dip"
+        android:minWidth="20dip"
+        android:text="Zapisz"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/sleepEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="382dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Jak sen?"
+        android:inputType="textLongMessage"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <EditText
+        android:id="@+id/feelEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="382dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Jak samopoczucie?"
+        android:inputType="textLongMessage"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272626"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:paddingTop="0dip"
+        android:paddingEnd="30dip"
+        android:paddingRight="30dip"
+        android:paddingBottom="0dip"
+        android:text="Wstał Nowy  Dzień:D"
+        android:textColor="#FDF8F8"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelEditText">
+
+        <RadioButton
+            android:id="@+id/yesRadio"
+            android:layout_width="293dp"
+            android:layout_height="56dp"
+            android:text="Trzymałem dietę"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/noRadio"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Nie trzymałem diety"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/someRadio"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Trochę tak trochę nie"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

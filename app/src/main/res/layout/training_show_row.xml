@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#3A3737"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/nameCheckBoxTrainingShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wyciskanie hantli na ławce skośnej"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/paramTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3x10 20 kg" />
+
+        <Button
+            android:id="@+id/nowyRekordButton"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nowy rekord!" />
+
+        <Button
+            android:id="@+id/pokazRekordButton"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pokaż tablicę rekordów" />
+
+    </LinearLayout>
+</LinearLayout>
+

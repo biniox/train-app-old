@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".CalendarView">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#272626"
+            android:drawableLeft="@drawable/ic_launcher_foreground"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:paddingLeft="30dip"
+            android:paddingTop="0dip"
+            android:paddingEnd="30dip"
+            android:paddingRight="30dip"
+            android:paddingBottom="0dip"
+            android:text="Zaplanuj swój plan treningowy"
+            android:textColor="#FDF8F8"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendarRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            tools:listitem="@layout/calendar_row" />
+
+        <Button
+            android:id="@+id/planButton"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@android:drawable/ic_menu_add"
+            android:text="Zaplanu dalsze treningi" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

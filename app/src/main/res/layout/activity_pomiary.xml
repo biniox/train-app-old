@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".pomiary">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#272626"
+                        android:drawableLeft="@drawable/ic_launcher_foreground"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingTop="0dip"
+                        android:paddingEnd="30dip"
+                        android:paddingRight="30dip"
+                        android:paddingBottom="0dip"
+                        android:text="Jak tam forma?"
+                        android:textColor="#FDF8F8"
+                        android:textSize="20sp"
+                        android:visibility="visible" />
+
+                    <View
+                        android:id="@+id/divider3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:layout_width="409dp"
+                        android:layout_height="78dp"
+                        android:background="@color/colorPrimary"
+                        android:paddingEnd="0dp"
+                        android:theme="@style/Theme.MaterialComponents.DayNight"
+                        app:tabIndicatorColor="@color/colorPrimary"
+                        app:tabPaddingEnd="0dp"
+                        app:tabPaddingStart="0dp"
+                        app:tabTextColor="#F4F3F3">
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="0dip"
+                            android:text="Data" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Waga" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uda" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Brzuch" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Klatka" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biceps" />
+                    </com.google.android.material.tabs.TabLayout>
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/RecyclerViewPomiary"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            tools:listitem="@layout/measure_row" />
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:paddingEnd="0dp"
+                            android:theme="@style/Theme.MaterialComponents.DayNight"
+                            android:visibility="invisible"
+                            app:tabIndicatorColor="@color/colorPrimary"
+                            app:tabPaddingEnd="0dp"
+                            app:tabPaddingStart="0dp"
+                            app:tabTextColor="#F4F3F3">
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="0dip"
+                                android:text="10-04-2020"
+                                android:theme="@style/AppTheme.AppBarOverlay" />
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="93kg" />
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="60cm" />
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="102cm" />
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100cm" />
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="38cm" />
+                        </com.google.android.material.tabs.TabLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/pomiaryButton"
+                            style="@android:style/Widget.Holo.Button.Toggle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:width="130dip"
+                            android:height="100dip"
+                            android:maxWidth="200dip"
+                            android:minWidth="20dip"
+                            android:text="Dodaj Nowy Pomiar"
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="Waga:"
+                            android:textColor="@color/white" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/wagaChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                        </com.github.mikephil.charting.charts.LineChart>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="Uda"
+                            android:textColor="@color/white" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/udaChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                        </com.github.mikephil.charting.charts.LineChart>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="Brzuch"
+                            android:textColor="@color/white" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/brzuchChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                        </com.github.mikephil.charting.charts.LineChart>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="Klatka Piersiowa"
+                            android:textColor="@color/white" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/klatkaChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                        </com.github.mikephil.charting.charts.LineChart>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="Biceps"
+                            android:textColor="@color/white" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/bicepsChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                        </com.github.mikephil.charting.charts.LineChart>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
